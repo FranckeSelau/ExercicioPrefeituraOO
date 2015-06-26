@@ -13,8 +13,8 @@ public class Prefeitura {
 			switch (menu()) {
 			case '1':	cadastra();			break;					
 			case '2':	relatorio();
-						    reinicia();			break;	
-			case '3':	sair();					break;	
+				        reinicia();			break;	
+			case '3':	sair();				break;	
 			}			
 		}
 	}//--------------------------------
@@ -81,9 +81,9 @@ public class Prefeitura {
 		if (ind > 0) {
 			mostrarHabitantes(vPessoa, "Nome", vPessoa, "Idade", vPessoa, "Sexo", vPessoa, "Salario R$");
 			System.out.println("\n\na) Média de salário da população: R$"+mediaSal()+
-							           "\nb) Na pesquisa realizada com "+ind+" pessoas, "+homens()+" são homens e "+mulheres()+" são mulheres,"+
-							           "\nsendo que a média de idade dos homens é "+mediaIdades('m', homens())+" anos e das mulheres "+mediaIdades('f', mulheres())+" anos."+
-						        	   "\nc) Percentual de Homens e Mulheres entre a faixa salarial: ");
+					   "\nb) Na pesquisa realizada com "+ind+" pessoas, "+homens()+" são homens e "+mulheres()+" são mulheres,"+
+				           "\nsendo que a média de idade dos homens é "+mediaIdades('m', homens())+" anos e das mulheres "+mediaIdades('f', mulheres())+" anos."+
+					   "\nc) Percentual de Homens e Mulheres entre a faixa salarial: ");
 			perSalario('m', "homens", homens());
 			perSalario('f', "mulheres", mulheres());
 		}else
@@ -141,8 +141,8 @@ public class Prefeitura {
 	
 	public static void mostraPercentSal(int num, int num2, int num3, String m, int pessoa){		
 		System.out.println("Percentual de "+m+" com salário [0,00 – 499,99]: "+((num*100)/pessoa)+"%"+
-						           "\nPercentual de "+m+" com salário [500,00 – 1.399,99]: "+((num2*100)/pessoa)+"%"+
-						           "\nPercentual de "+m+" com salário [1.400,00 – acima]: "+((num3*100)/pessoa)+"%");		
+				   "\nPercentual de "+m+" com salário [500,00 – 1.399,99]: "+((num2*100)/pessoa)+"%"+
+				   "\nPercentual de "+m+" com salário [1.400,00 – acima]: "+((num3*100)/pessoa)+"%");		
 	}//-------------------------------- 
 	
 	public static double mediaIdades(char sexo, int num){
