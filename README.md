@@ -1,2 +1,0 @@
-# ExercicioPrefeituraOO
-ExerciciosPrimSemestre
