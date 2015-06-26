@@ -1,4 +1,3 @@
-@@ -0,0 +1,39 @@
 package Controle;
 
 public class Pessoa {
